@@ -26,6 +26,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
+    '@nuxtjs/google-analytics'
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -43,5 +44,13 @@ export default {
   // modify router
   router: {
     base: '/pra-ga'
+  },
+
+  // Google Analytics
+  googleAnalytics: {
+    id: '258353510',
+    autoTracking: {
+      screenview: true,
+    }
   }
 }
